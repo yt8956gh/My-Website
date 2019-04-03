@@ -131,7 +131,7 @@ div.mine-navbar-container .mine-navbar-item:hover {
     color: #fff;
 }
 
-a,a:visited{
+a, a:visited{
     color:inherit;
     text-decoration: none;
 }
