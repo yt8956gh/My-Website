@@ -40,11 +40,9 @@
     </ul>
 </div>
 
-<div class="fixed-img flex-container-column" id="last-img">
+<div class="fixed-img flex-container-column" id="last-img" onclick="location.href='https://github.com/yt8956gh'">
     <div class="flex-container-column" id="github-card">
-        <div class="flex-container-column" id="github-circle">
-            <div id="github-icon" onclick="location.href='https://github.com/yt8956gh'"></div>
-        </div>
+        <img id="github-img" src="images/GitHub-Mark-120px-plus.png" alt="github_img">
         <div id="github-text">My Github</div>
     </div>
 </div>
