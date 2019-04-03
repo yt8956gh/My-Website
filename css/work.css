@@ -5,98 +5,7 @@ body {
 
 :root{
     --last-img-height:85vh;
-}
-
-.flex-container-column {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-.flex-container-row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-div.mine-navbar-container {
-
-    height: 75px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: transparent;
-    color: white;
-
-    font-family: 'Lora', serif;
-}
-
-div.mine-navbar-container:hover {
-    -webkit-animation-name: color_change;
-    animation-name: color_change;
-    -webkit-animation-duration: 500ms;
-    animation-duration: 500ms;
-    -webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
-    background-color: black;
-}
-
-div.mine-navbar-container .mine-navbar-stretch {
-    -webkit-box-flex: 1;
-    flex-grow: 1;
-}
-
-div.mine-navbar-container .mine-navbar-title {
-    font-size: 30px;
-    margin-left: 50px;
-}
-
-div.mine-navbar-container .mine-navbar-item {
-    font-size: 20px;
-    margin-right: 50px;
-    padding: 5px 10px;
-}
-
-div.mine-navbar-container .mine-navbar-item:hover {
-    background-color: rgb(232, 184, 38);
-    color: rgb(146, 14, 27);
-    border-radius: 20px;
-    font-weight: bold;
-}
-
-@-webkit-keyframes color_change {
-    from {
-        background-color: transparent
-    }
-    to {
-        background-color: black;
-    }
-}
-
-@keyframes color_change {
-    from {
-        background-color: transparent
-    }
-    to {
-        background-color: black;
-    }
+    --APP-height:500px;
 }
 
 header.header-container {
@@ -238,10 +147,14 @@ div.header-text {
     }
 }
 
+.text{
+    font-family: 'Noto Sans TC', sans-serif;
+}
 
 .heading {
+    font-family: 'Lora', serif;
     margin-bottom: 20px;
-    font-size: 40px;
+    font-size: 3rem;
     font-weight: bold;
 }
 
@@ -249,8 +162,9 @@ div.article {
     width: 50%;
     margin: 60px auto;
     text-align: left;
-    font-family: 'Lora', serif;
-    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-size: 1.5rem;
     line-height: 50px;
     -webkit-animation-name: text-float-up;
     animation-name: text-float-up;
@@ -272,7 +186,7 @@ div.fixed-img {
 }
 
 #img-1 {
-    background-image: url('../images/home-2.jpg');
+    background-image: url('../images/Carbout.jpg');
 }
 
 #img-2 {
@@ -287,14 +201,16 @@ div.fixed-img {
     background-image: url('../images/pooh-eat.jpg');
 }
 
-#img-5 {
-    height: var(--last-img-height);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 51, 51, 0.5)), to(rgba(51, 51, 51, 0.5))), url('../images/pooh-bye.jpg');
-    background-image: -webkit-linear-gradient(rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.5)), url('../images/pooh-bye.jpg');
-    background-image: -o-linear-gradient(rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.5)), url('../images/pooh-bye.jpg');
-    background-image: linear-gradient(rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.5)), url('../images/pooh-bye.jpg');
-}
 
+
+#APP-img{
+    margin: 5%;
+    background-repeat:no-repeat;
+    background-image: url('../images/APP.png');
+    background-size:contain ;
+    height: var(--APP-height);
+    width: calc(var(--APP-height)*9/16);
+}
 
 div.thanks-for-watching {
     display: -webkit-box;
@@ -314,7 +230,7 @@ div.thanks-for-watching {
     background-color: rgb(209, 177, 117);
     text-align: center;
     color: white;
-    font-size: 50px;
+    font-size: xx-large;
     font-weight: bold;
     font-family: 'Lora', serif;
 
@@ -343,7 +259,7 @@ footer div.copyright {
     background-color: black;
     height: calc(100vh - var(--last-img-height));
     color: gray;
-    font-size: 15px;
+    font-size: small;
     font-family: Helvetica, serif;
 }
 
@@ -380,4 +296,15 @@ footer div#contact-container {
 *::selection {
     background-color: rgb(232, 184, 38) ;
     color: #fff;
+}
+
+#carbout-container{
+    width: 75%;
+}
+
+span.highlight{
+    background-color: #2eb8b8;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
 }

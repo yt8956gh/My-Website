@@ -2,31 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Winnie the pooh</title>
-    <link rel="stylesheet" href="css/my-list-style.css"/>
+    <title>Nian's Website</title>
+    <link rel="stylesheet" href="css/mimicat.css"/>
+    <link rel="stylesheet" href="css/general.css"/>
     <link href="https://fonts.googleapis.com/css?family=Croissant+One|Lora|Pacifico" rel="stylesheet">
 </head>
 <body>
-<div class="mine-navbar-container flex-container-row">
-    <div class="mine-navbar-title">Winnie the Pooh</div>
-    <div class="mine-navbar-stretch"></div>
-    <div class="mine-navbar-item">Home</div>
-    <div class="mine-navbar-item">Profile</div>
-    <div class="mine-navbar-item">More</div>
-</div>
+<?php include_once('./navbar.php');?>
 
 <header class="header-container flex-container-row">
-    <div class="header-text">A Short Introduction to <br>Winnie the Pooh</div>
+    <div class="header-text">Mimi cat</div>
 </header>
 
 
-<img id="profile" src="images/profile.jpg" alt="profile">
+<img id="profile" src="images/mimi_profile.jpg" alt="profile">
 
 <div class="article">
-    <div class="heading">Pooh's Appearance</div>
-    Pooh is an anthropomorphic teddy bear. He is short, has yellow fur, and a round belly. He has black dot eyes, a
-    black nose, a short snout, and small round ears. There is also stitching on his belly and bottom, which occasionally
-    rips open. He only wears a small red short-sleeved shirt, in which his belly hangs out of.
+    <div class="heading">Mimi's Appearance</div>
+    Mimi is a mixed cat
 </div>
 
 <div class="fixed-img" id="img-1"></div>

@@ -4,100 +4,10 @@ body {
 }
 
 :root{
-    --last-img-height:85vh;
+    --last-img-height:90vh;
 }
 
-.flex-container-column {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
 
-.flex-container-row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-div.mine-navbar-container {
-
-    height: 75px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: transparent;
-    color: white;
-
-    font-family: 'Lora', serif;
-}
-
-div.mine-navbar-container:hover {
-    -webkit-animation-name: color_change;
-    animation-name: color_change;
-    -webkit-animation-duration: 500ms;
-    animation-duration: 500ms;
-    -webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
-    background-color: black;
-}
-
-div.mine-navbar-container .mine-navbar-stretch {
-    -webkit-box-flex: 1;
-    flex-grow: 1;
-}
-
-div.mine-navbar-container .mine-navbar-title {
-    font-size: 30px;
-    margin-left: 50px;
-}
-
-div.mine-navbar-container .mine-navbar-item {
-    font-size: 20px;
-    margin-right: 50px;
-    padding: 5px 10px;
-}
-
-div.mine-navbar-container .mine-navbar-item:hover {
-    background-color: rgb(232, 184, 38);
-    color: rgb(146, 14, 27);
-    border-radius: 20px;
-    font-weight: bold;
-}
-
-@-webkit-keyframes color_change {
-    from {
-        background-color: transparent
-    }
-    to {
-        background-color: black;
-    }
-}
-
-@keyframes color_change {
-    from {
-        background-color: transparent
-    }
-    to {
-        background-color: black;
-    }
-}
 
 header.header-container {
 
@@ -261,7 +171,7 @@ div.article {
 }
 
 div.fixed-img {
-    height: 600px;
+    height: 300px;
     color: white;
     font-family: 'Croissant One', cursive;
     font-size: 150px;
@@ -271,30 +181,11 @@ div.fixed-img {
     background-position: top;
 }
 
-#img-1 {
-    background-image: url('../images/home-2.jpg');
-}
-
-#img-2 {
-    background-image: url('../images/pooh-honey.jpg');
-}
-
-#img-3 {
-    background-image: url('../images/pooh_origin.jpg');
-}
-
-#img-4 {
-    background-image: url('../images/pooh-eat.jpg');
-}
-
-#img-5 {
+#last-img {
     height: var(--last-img-height);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 51, 51, 0.5)), to(rgba(51, 51, 51, 0.5))), url('../images/pooh-bye.jpg');
-    background-image: -webkit-linear-gradient(rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.5)), url('../images/pooh-bye.jpg');
-    background-image: -o-linear-gradient(rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.5)), url('../images/pooh-bye.jpg');
-    background-image: linear-gradient(rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.5)), url('../images/pooh-bye.jpg');
+    background-image: linear-gradient(rgba(50,50,50,0.5),rgba(50,50,50,0.5)), url('../images/hello.jpg');
+    background-position: center;
 }
-
 
 div.thanks-for-watching {
     display: -webkit-box;
@@ -352,7 +243,7 @@ footer div#contact-background {
     box-sizing: border-box;
     text-align: left;
     width: 100%;
-    background-color: #996d0b;
+    background-color: rgb(0,0,0);
 
 }
 
@@ -360,7 +251,7 @@ footer div#contact-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    color: black;
+    color: gray;
     margin: auto;
     width: 50%;
     padding: 6px;
@@ -373,11 +264,63 @@ footer div#contact-container {
 }
 
 *::-moz-selection {
-    background-color: rgb(232, 184, 38) ;
+    background-color: rgb(74, 159, 156) ;
     color: #fff;
 }
 
 *::selection {
-    background-color: rgb(232, 184, 38) ;
+    background-color: rgb(74, 159, 156) ;
     color: #fff;
 }
+
+#github-circle{
+    background: #2b2b2b;
+    border-radius:100%;
+    height: 130px;
+    width: 130px;
+}
+
+#github-icon{
+    background: url('../images/GitHub-Mark-Light-120px-plus.png');
+    height: 120px;
+    width: 120px;
+    cursor: pointer;
+
+}
+
+#github-text{
+    font-family: 'Croissant One', cursive;
+    font-size: 2rem;
+    color: #2b2b2b;
+    text-align: center;
+
+    -webkit-animation-name: text-float-up;
+    animation-name: text-float-up;
+    -webkit-animation-duration: 500ms;
+    animation-duration: 500ms;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+}
+
+span.highlight{
+    color: #2eb8b8;
+    font-weight: bolder;
+}
+
+#github-card{
+    background: white;
+    height: 50%;
+    width: 20%;
+    border-radius: 15%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#github-card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.69);
+}
+
+#img-1{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../images/CCU.jpg");
+    background-position: center;
+}
+
