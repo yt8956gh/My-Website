@@ -4,140 +4,26 @@ body {
 }
 
 :root{
-    --last-img-height:85vh;
-}
-
-.flex-container-column {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-.flex-container-row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-div.mine-navbar-container {
-
-    height: 75px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: transparent;
-    color: white;
-
-    font-family: 'Lora', serif;
-}
-
-div.mine-navbar-container:hover {
-    -webkit-animation-name: color_change;
-    animation-name: color_change;
-    -webkit-animation-duration: 500ms;
-    animation-duration: 500ms;
-    -webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
-    background-color: black;
-}
-
-div.mine-navbar-container .mine-navbar-stretch {
-    -webkit-box-flex: 1;
-    flex-grow: 1;
-}
-
-div.mine-navbar-container .mine-navbar-title {
-    font-size: 30px;
-    margin-left: 50px;
-}
-
-div.mine-navbar-container .mine-navbar-item {
-    font-size: 20px;
-    margin-right: 50px;
-    padding: 5px 10px;
-}
-
-div.mine-navbar-container .mine-navbar-item:hover {
-    background-color: rgb(232, 184, 38);
-    color: rgb(146, 14, 27);
-    border-radius: 20px;
-    font-weight: bold;
-}
-
-@-webkit-keyframes color_change {
-    from {
-        background-color: transparent
-    }
-    to {
-        background-color: black;
-    }
-}
-
-@keyframes color_change {
-    from {
-        background-color: transparent
-    }
-    to {
-        background-color: black;
-    }
+    --last-img-height:95vh;
 }
 
 header.header-container {
 
-    height: 500px;
+    height: 90vh;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position:top;
     background-attachment: fixed;
-    -webkit-animation-name: show-header;
-    animation-name: show-header;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/Mimi/home.jpg");
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Mimi/home.jpg");
+    background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Mimi/home.jpg");
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Mimi/home.jpg");
     -webkit-animation-duration: 500ms;
     animation-duration: 500ms;
     -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
-}
-
-
-@-webkit-keyframes show-header {
-    0%{background-color: black;}
-    50%{}
-    100%{
-        background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/home.jpg");
-        background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/home.jpg");
-        background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/home.jpg");
-        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/home.jpg");
-    }
-}
-
-
-@keyframes show-header {
-    0%{background-color: black;}
-    50%{}
-    100%{
-        background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/home.jpg");
-        background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/home.jpg");
-        background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/home.jpg");
-        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/home.jpg");
-    }
 }
 
 
@@ -261,38 +147,40 @@ div.article {
 }
 
 div.fixed-img {
-    height: 600px;
+    height: 90vh;
     color: white;
     font-family: 'Croissant One', cursive;
     font-size: 150px;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: top;
+    background-position: center;
+    position: relative;
 }
 
 #img-1 {
-    background-image: url('../images/home-2.jpg');
+    background-image: url('../images/Mimi/MIMI (12).jpg');
 }
 
 #img-2 {
-    background-image: url('../images/pooh-honey.jpg');
+    background-image: url('../images/Mimi/MIMI (18).jpg');
 }
 
 #img-3 {
-    background-image: url('../images/pooh_origin.jpg');
+    background-image: url('../images/Mimi/MIMI (14).jpg');
+    background-position: top;
 }
 
 #img-4 {
-    background-image: url('../images/pooh-eat.jpg');
+    background-image: url('../images/Mimi/MIMI (16).jpg');
 }
 
 #img-5 {
     height: var(--last-img-height);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 51, 51, 0.5)), to(rgba(51, 51, 51, 0.5))), url('../images/pooh-bye.jpg');
-    background-image: -webkit-linear-gradient(rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.5)), url('../images/pooh-bye.jpg');
-    background-image: -o-linear-gradient(rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.5)), url('../images/pooh-bye.jpg');
-    background-image: linear-gradient(rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.5)), url('../images/pooh-bye.jpg');
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 51, 51, 0.5)), to(rgba(51, 51, 51, 0.5))), url('../images/Mimi/mimi-bye.jpg');
+    background-image: -webkit-linear-gradient(rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.5)), url('../images/Mimi/mimi-bye.jpg');
+    background-image: -o-linear-gradient(rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.5)), url('../images/Mimi/mimi-bye.jpg');
+    background-image: linear-gradient(rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.5)), url('../images/Mimi/mimi-bye.jpg');
 }
 
 
@@ -311,9 +199,9 @@ div.thanks-for-watching {
     -ms-flex-direction: column;
     flex-direction: column;
     height: 400px;
-    background-color: rgb(209, 177, 117);
+    background-color: rgb(255, 170, 164);
     text-align: center;
-    color: white;
+    color: #ff4a4e;
     font-size: 50px;
     font-weight: bold;
     font-family: 'Lora', serif;
@@ -352,7 +240,7 @@ footer div#contact-background {
     box-sizing: border-box;
     text-align: left;
     width: 100%;
-    background-color: #996d0b;
+    background-color: black;
 
 }
 
@@ -360,7 +248,7 @@ footer div#contact-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    color: black;
+    color: gray;
     margin: auto;
     width: 50%;
     padding: 6px;
@@ -372,12 +260,22 @@ footer div#contact-container {
     flex-grow: 1;
 }
 
-*::-moz-selection {
-    background-color: rgb(232, 184, 38) ;
-    color: #fff;
+
+#IG-icon{
+
+    background-image: url("../images/Mimi/Instagram_icon.png");
+    background-position: center;
+    background-size: contain;
+    height: 100px;
+    width: 100px;
+    margin-right: 5%;
 }
 
-*::selection {
-    background-color: rgb(232, 184, 38) ;
-    color: #fff;
+#IG-text{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#IG-container{
+    cursor: pointer;
 }

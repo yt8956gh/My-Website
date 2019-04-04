@@ -49,7 +49,7 @@
 <div class="article flex-container-row" id="IFS-container">
     <div>
         <div class="heading">Intelligent Factory System (IFS)</div>
-        <div class='sub-heading'>IOT system collect and analyze data from factory with <br>Raspberry Pi and ESP-8266.</div>
+        <div class='sub-heading'>An IOT system collects and analyzes data from factory with <br>Raspberry Pi and ESP-8266.</div>
         <div class="text">
             <ul>
                 <li>
@@ -58,11 +58,11 @@
                     </div>
                     - Taiwan Clean Energy Creativity Contest
                 </li>
-                <li>Correct data with different sensors(e.g. electric current、temperature)</li>
-                <li>Self-Made IFS-Box with 3D printer</li>
+                <li>Correct data with different sensors(e.g. electric current,temperature)</li>
+                <li>3D Printed IFS-Box</li>
                 <li>GUI with C++ Qt5</li>
                 <li>Wireless communication with Wi-Fi</li>
-                <li>Analysis data with Python</li>
+                <li>Analyze data with Python</li>
             </ul>
         </div>
     </div>
