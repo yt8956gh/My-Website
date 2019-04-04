@@ -58,7 +58,7 @@
                     </div>
                     - Taiwan Clean Energy Creativity Contest
                 </li>
-                <li>Correct data with different sensors(e.g. electric current,temperature)</li>
+                <li>Collect data with different sensors(e.g. electric current,temperature)</li>
                 <li>3D Printed IFS-Box</li>
                 <li>GUI with C++ Qt5</li>
                 <li>Wireless communication with Wi-Fi</li>
