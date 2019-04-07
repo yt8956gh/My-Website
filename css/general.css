@@ -46,6 +46,43 @@ div.mine-navbar-container {
     font-family: 'Lora', serif;
 }
 
+#myNavbarDropdown{
+   display: none;
+}
+
+.navbar-item-Mobile{
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .navbar-item-Mobile{
+        display: block;
+    }
+
+    .navbar-item-PC {
+        display: none;
+    }
+
+    #myNavbarDropdown{
+
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+        position: relative;
+        height: 0;
+        top: 75px;
+        right: 0;
+        background: rgba(50,50,50,0.5);
+        color: white;
+        font-family: 'Lora', serif;
+    }
+
+    div.mine-navbar-container {
+        background: black;
+    }
+}
+
 div.mine-navbar-container:hover {
     -webkit-animation-name: color_change;
     animation-name: color_change;
@@ -56,25 +93,25 @@ div.mine-navbar-container:hover {
     background-color: black;
 }
 
-div.mine-navbar-container .mine-navbar-stretch {
+.mine-navbar-stretch {
     -webkit-box-flex: 1;
     flex-grow: 1;
 }
 
-div.mine-navbar-container .mine-navbar-title {
+.mine-navbar-title {
     font-size: 30px;
     margin-left: 50px;
     cursor: pointer;
 }
 
-div.mine-navbar-container .mine-navbar-item {
+.mine-navbar-item {
     font-size: 20px;
     margin-right: 50px;
     padding: 5px 10px;
     cursor: pointer;
 }
 
-div.mine-navbar-container .mine-navbar-item:hover {
+.mine-navbar-item:hover {
     background-color: rgb(74, 159, 156);
     color: white;
     border-radius: 20px;
@@ -83,7 +120,6 @@ div.mine-navbar-container .mine-navbar-item:hover {
 
 @-webkit-keyframes color_change {
     from {
-        background-color: transparent
     }
     to {
         background-color: black;
@@ -92,7 +128,6 @@ div.mine-navbar-container .mine-navbar-item:hover {
 
 @keyframes color_change {
     from {
-        background-color: transparent
     }
     to {
         background-color: black;

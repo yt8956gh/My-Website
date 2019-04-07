@@ -285,18 +285,16 @@ footer div#contact-container {
 @media screen and (max-width: 1024px) {
 
 
-    div.mine-navbar-container .mine-navbar-item {
-        display: none;
+    .header-container{
+        max-height: 100%;
+        background-size: cover;
+        background-attachment: scroll;
     }
 
     div.fixed-img {
         max-height: 100%;
-        color: black;
         background-size: cover;
-        background-repeat: no-repeat;
         background-attachment: scroll;
-        background-position: center;
-        position: relative;
     }
 
     .heading {
