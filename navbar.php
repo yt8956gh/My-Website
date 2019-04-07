@@ -1,4 +1,10 @@
-<div class="mine-navbar-container flex-container-row">
+<script>
+    var navbar = document.getElementById('myNavbar');
+
+
+</script>
+
+<div id='myNavbar' class="mine-navbar-container flex-container-row">
     <div class="mine-navbar-title" onclick="location.href='./index.php'">Nian's Website</div>
     <div class="mine-navbar-stretch"></div>
     <div class="mine-navbar-item" onclick="location.href='./index.php'">Home</div>

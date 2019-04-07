@@ -137,6 +137,8 @@ div.article {
 }
 
 div.fixed-img {
+    filter: blur(1px);
+    opacity: 0.6;
     height: 600px;
     color: white;
     font-family: 'Croissant One', cursive;
@@ -270,4 +272,80 @@ footer div#contact-container {
     height: 2rem;
     color: white;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+
+    div.mine-navbar-container .mine-navbar-item {
+        display: none;
+    }
+
+    div.fixed-img {
+        max-height: 100%;
+        color: black;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center;
+        position: relative;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    .sub-heading{
+        font-size: 1.5rem;
+    }
+
+    div.article {
+        width: 80%;
+        font-size: 1.25rem;
+        line-height: 50px;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    ul{
+        padding: 0;
+    }
+
+    footer div.copyright {
+        height: auto;
+    }
+
+    footer div#contact-container {
+        width: 95%;
+    }
+
+    div.header-text {
+        font-size: 3rem;
+    }
+
+    #IFS-container{
+        width: 90%;
+    }
+
+
+    #IFS-img{
+        background-position: center;
+        margin: 0;
+        width: inherit;
+        max-height: 100%;
+        box-sizing: border-box;
+    }
+
+    #APP-img{
+        background-position: center;
+        margin: auto;
+        width: 90%;
+        max-height: 100%;
+        box-sizing: border-box;
+    }
+
+    .highlight{
+        display: inline;
+    }
 }

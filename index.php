@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Nian's Website</title>
     <link rel="stylesheet" href="css/index.css"/>
     <link rel="stylesheet" href="css/general.css"/>

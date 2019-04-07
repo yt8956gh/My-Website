@@ -280,3 +280,48 @@ footer div#contact-container {
 #IG-container{
     cursor: pointer;
 }
+
+
+@media screen and (max-width: 1024px) {
+
+
+    div.mine-navbar-container .mine-navbar-item {
+        display: none;
+    }
+
+    div.fixed-img {
+        max-height: 100%;
+        color: black;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center;
+        position: relative;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    div.article {
+        width: 80%;
+        font-size: 1.25rem;
+        line-height: 50px;
+
+    }
+
+    footer div.copyright {
+        height: auto;
+    }
+
+    footer div#contact-container {
+        width: 95%;
+    }
+
+    div.header-text {
+        font-size: 3rem;
+    }
+
+
+
+}
